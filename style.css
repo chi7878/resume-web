@@ -2,15 +2,27 @@ html,body{
     font-family: 'Noto Sans TC', sans-serif;
     margin: 0;
     padding: 0;
+    color: #333333;
+}
+
+p{
+    margin:0;
+    padding: 0;
 }
 
 header{
-    border-bottom: 1.5px solid #333333;
-    padding:10px 0px;
+    border-bottom: 1.3px solid #333333;
     position: fixed;
     width: 100%;
     background-color: #FFFFFF;
     z-index: 99999;
+}
+
+header .loGoBox{
+    border-right:1.3px solid #333333;
+    border-left: 5px solid #FF595E;
+    float: left;
+    padding:10px 0;
 }
 
 header .logo{
@@ -20,9 +32,79 @@ header .logo{
 }
 
 .leftNavBar{
-    border-right: 1.5px solid #333333;
+    border-right: 1.3px solid #333333;
     height:100%;
     width: 5rem;
     position: fixed;
     z-index: 99998;
+    background-color: #FFFFFF;
+}
+
+.mainContent img{
+    height: 95vh;
+    width: 98vw;
+}
+
+.workContent{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 200px;
+}
+
+.workContent .workNews .workTitle{
+    font-size: 28px;
+    font-weight: 500;
+    letter-spacing: 5px;
+    margin-bottom:20px;
+}
+
+.workContent .workNews a{
+    font-weight: 300;
+    letter-spacing: 5px;
+    text-decoration: none;
+    color: #333333;
+    margin: 0 10px;
+}
+
+.workContent a p{
+    border-bottom: 0.5px solid #333333;
+    padding-bottom: 5px;
+    width: 80%;
+}
+
+
+
+.contactContent,footer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 200px;
+}
+
+.contactContent .contactTitle,footer h3{
+    font-size: 24px;
+    letter-spacing: 8px;
+}
+
+.contactContent .name{
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: 5px;
+}
+
+.contactContent .email{
+    letter-spacing: 5px;
+}
+
+.contactContent .myImg{
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50rem;
+    background-color: #7AA8BC;
+    overflow: hidden;
 }
