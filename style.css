@@ -3,11 +3,24 @@ html,body{
     margin: 0;
     padding: 0;
     color: #333333;
+    cursor: default;
+    position: relative;
 }
 
 p{
     margin:0;
     padding: 0;
+}
+
+ul{
+    padding: 0;
+}
+.bgLine{
+    position: absolute;
+    height: 100%;
+    right: 10px;
+    z-index: -1;
+    opacity: 0.5;
 }
 
 header{
@@ -55,7 +68,6 @@ header .logo p{
     list-style: none;
     display: flex;
     justify-content: space-around;
-    padding: 0;
     margin: 0;
     height:100%;
 }
@@ -86,6 +98,12 @@ header .logo p{
     transform: translateX(-50%);
 }
 
+@media (max-width:1440px){
+    .leftNavBar{
+        display: none;
+    }
+}
+
 .mainContent{
     width: 100%;
     height: 100vh;
@@ -109,6 +127,7 @@ header .logo p{
     top: 50%;
     transform: translateY(-50%);
     width: 50%;
+    min-width: 550px;
 }
 
 .bannerContent .bannerTitle{
@@ -182,8 +201,86 @@ header .logo p{
     transform: translateX(-50%);
 }
 
+@media(max-width:1440px){
+    .bannerContent .bannerTitle,.bannerContent .bannerText{
+        margin-right: auto ;
+        margin-left: auto ;
+    }
+}
+
+@media(max-width:960px){
+    
+    .mainContent{
+        display: flex;
+        justify-content: center;
+    }
+
+    .mainContent img{
+        display: none;
+    }
+
+    .mainContent .bannerContent{
+        width: 80%;
+    }
+
+    .bannerContent .bannerTitle{
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .bannerContent .bannerText{
+        text-align: center;
+    }
+}
+
 .aboutContent{
     padding-top: 200px;
+}
+
+.aboutContent .aboutText{
+    display:flex;
+    justify-content: center;
+    margin-top: 100px;
+    position:relative;
+}
+
+.aboutContent .aboutText img{
+    width: 70%;
+}
+
+
+.aboutContent .aboutText p{
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    right: 20%;
+    width: 40%;
+    line-height: 30px;
+    letter-spacing: 5px;
+    font-weight: 500;
+}
+
+@media(max-width:1440px){
+    .aboutContent .aboutText img{
+        width: 90%;
+    }
+
+    .aboutContent .aboutText p{
+        width: 56%;
+        right: 10%;
+    }
+}
+
+@media(max-width:960px){
+    .aboutContent .aboutText img{
+        display: none;
+    }
+    .aboutContent .aboutText p{
+        position: relative;
+        width: 80%;
+        margin-top: 100px;
+        margin-left: auto;
+    }
 }
 
 .workContent{
@@ -194,9 +291,9 @@ header .logo p{
 
 .workContent .worksList li{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    margin: 50px 0;
+    margin: 50px 10%;
 }
 
 .workContent .workNews .workTitle{
@@ -223,11 +320,30 @@ header .logo p{
     position:absolute;
     right: 30px;
     transition:all .3s;
+}
 
+.worksList img{
+    width: 800px;
 }
 
 .workNews a:hover span{
     right: 5px;
+}
+
+@media (max-width:1440px){
+
+    .workContent .worksList li{
+        flex-direction: column;
+    }
+
+    .worksList img{
+        width: 80vw;
+    }
+
+    .workNews p{
+        margin-right: auto;
+        margin-left:auto;
+    }
 }
 
 
@@ -271,7 +387,7 @@ header .logo p{
     width: 12rem;
     height: 12rem;
     border-radius: 50rem;
-    background-color: #7AA8BC;
+    border: 5px solid #7AA8BC;
     overflow: hidden;
 }
 
@@ -305,7 +421,7 @@ header .logo p{
 }
 
 .contactList a:hover{
-    background-color: #FF595E20;
+    background-color: #FF595E50;
     
 }
 
