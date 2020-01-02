@@ -302,6 +302,7 @@ header .logo p{
     font-weight: 500;
     letter-spacing: 5px;
     margin-bottom:20px;
+    text-align:left;
 }
 
 .workContent .workNews a{
@@ -351,7 +352,7 @@ header .logo p{
 .workContent a p{
     border-bottom: 0.5px solid #333333;
     padding-bottom: 5px;
-    width: 80%;
+    width: 250px;
 }
 
 
