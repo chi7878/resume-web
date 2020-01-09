@@ -53,6 +53,25 @@ header .logo p{
     margin-left: 30px;
 }
 
+header .logo img{
+    width: 50px;
+}
+
+@media (max-width:960px){
+    .scroll{
+        display:none;
+    }
+
+    .loGoBox a{
+        font-size: 25px;
+    }
+
+    header .logo img{
+        width: 40px;
+    }
+
+}
+
 .leftNavBar{
     border-top: 1.3px solid #333333;
     height:5rem;
