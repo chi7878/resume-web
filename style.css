@@ -107,7 +107,7 @@ header .logo img{
 }
 
 .leftNavBar li a:hover{
-    background-color: #FF595E50;
+    background-color: #b7d0ff50;
 }
 
 .leftNavBar li a span{
@@ -376,7 +376,7 @@ header .logo img{
 
 
 
-.contactContent,footer{
+footer{
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -390,6 +390,65 @@ header .logo img{
     letter-spacing: 8px;
     text-align: center;
     margin-bottom: 50px;
+}
+
+.contactTitle {
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.contactContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-top: 200px;
+    position: relative;
+}
+
+.contactContent-box {
+    flex: 1;
+}
+
+.contactContent-box:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactContent-box__title {
+    font-size: 22px;
+    letter-spacing: 8px;
+    margin: 0;
+    margin-bottom: 20px;
+    border-bottom: 1.5px solid #333333;
+    width: 120px;
+    color: #333333;
+}
+
+.contactContent-box__item-title {
+    font-size: 22px;
+    letter-spacing: 5px;
+    margin: 0;
+    font-weight: 500;
+}
+
+.contactContent-box__item-date {
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    font-weight: 500;
+
+}
+
+.contactContent-box__item-text {
+    font-size: 16px;
+    letter-spacing: 2px;
+    width: 90%;
+    color: #4b4b4b;
 }
 
 .contactContent .name{
@@ -419,6 +478,17 @@ header .logo img{
     margin: 20px 0;
 }
 
+@media (max-width:960px){
+    .contactContent {
+        flex-direction: column;
+    }
+
+    .contactContent-box:nth-child(3) {
+        margin-top: 40px;
+        width: 80%;
+    }
+}
+
 .contactList{
     list-style: none;
     display: flex;
@@ -442,7 +512,7 @@ header .logo img{
 }
 
 .contactList a:hover{
-    background-color: #FF595E50;
+    background-color: #b7d0ff50;
     
 }
 
